@@ -16,8 +16,9 @@ The installation should take about 10 minutes.
 
 ## Code Details
 The notebook contains the code used for our machine learning modeling. To apply the code to your own data, the following files would be needed:
+### Omics Data Files
+- ./data/processed/processed_proteomics.csv: This file should be tabular omics data with rows representing patients and columns representing proteins (or measurements of other analytes). It should be of dimension n_patients, num_omics_analytes_measured.
 ### Baseline Data Files (i.e. patients who have both EHR and omics data)
-- ./data/processed/processed_proteomics.csv: This file should be tabular omics data with rows representing patients and columns representing proteins (or measurements of other analytes).
 - ./data/processed/RNN_data_omics_cohort_disease_modeling.npy: This file should contain the EHR input to the RNN for the patients with both EHR and omics data. The EHR data in this file are embedded using a word2vec model trained on only the patients with both EHR and omics data. The file should be of dimension n_patients, max_days, embedding_dim. 
 - ./data/processed/RNN_data_outcomes_omics_cohort_disease_status.npy: This file should contain the binary disease label for the patients in the omics cohort. It should be of dimension n_patients.
 - ./data/processed/RNN_data_lengths_omics_cohort_disease_status.npy: This file should contain the lengths of the EHR sequences for the patients in the omics cohort (used for padding in the RNN). It should be of dimension n_patients.
