@@ -24,7 +24,7 @@ The notebook contains the code used for our machine learning modeling. To apply 
 - ./data/processed/RNN_data_lengths_omics_cohort_disease_status.npy: This file should contain the lengths of the EHR sequences for the patients in the omics cohort (used for padding in the RNN). It should be of dimension n_patients.
 - ./data/processed/sampleID_indices_omics_cohort_disease_modeling.csv: This file should contain the patient ID and corresponding index of that patient's data in the other files. It is primarily used to ensure all data are correctly aligned. It should be dimension n_patients, 2.
 ### Baseline Data Files (i.e. patients who have both EHR and omics data), processed with pre-trained word2vec model
-The following files are identical to those above, except the EHR codes are embedded using the word2vec model trained with ALL available EHR data.
+The following files are identical to those above, except the EHR codes are embedded using the word2vec model trained with ALL available EHR data. These files are used to fine-tune the pre-trained model and take advantage of the fact that we can also learn a more powerful word2vec model by pre-training with a large amount of EHR data.
 - ./data/processed/RNN_data_omics_cohort_disease_modeling_PT_word2vec_model.npy
 - ./data/processed/RNN_data_outcomes_omics_cohort_disease_status_PT_word2vec_model.npy
 - ./data/processed/RNN_data_lengths_omics_cohort_disease_status_PT_word2vec_model.npy
