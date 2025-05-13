@@ -1,5 +1,5 @@
 # COMET: Clinical and Omics Multi-Modal Analysis Enhanced with Transfer Learning -- Diabetic Retinopathy
-COMET is a machine learning framework that incorporates large, observational electronic health record (EHR) databases and transfer learning to improve the analysis of small datasets from omics studies. For more detail, please see our publication describing the development of COMET (here)[https://www.nature.com/articles/s42256-024-00974-9]
+COMET is a machine learning framework that incorporates large, observational electronic health record (EHR) databases and transfer learning to improve the analysis of small datasets from omics studies. For more detail, please see our publication describing the development of COMET [here](https://www.nature.com/articles/s42256-024-00974-9)
 ## Overview
 This repo contains the code used for the analyses and results presented in our manuscript focused on the analysis of diabetc retinopathy. The EHR data cannot be shared publicly due to Stanford University policies. However, the code in this repository can be used to analyze similarly structured data for researchers who have access to omics and EHR data.
 ## Installation and Setup
